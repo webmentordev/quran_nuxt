@@ -14,8 +14,6 @@
     padding:  2px  6px;
 }
 
-span{
-    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ffff43);
-    margin: -2px -6px;
-    padding:  2px  6px;
+.verses li:last-child{
+    @apply border-none;
 }
