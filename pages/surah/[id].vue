@@ -16,8 +16,8 @@
     const data = ref([]);
     
     onMounted(() => {
-        $fetch(`http://api.quran.com/api/v3/chapters/${route.params.id}`).then((result) => {
-            $fetch(`http://api.quran.com/api/v3/chapters/${route.params.id}/verses?limit=${result.chapter.verses_count}&translations=21&language=en&text_type=words`).then((response) => {
+        $fetch(`https://api.quran.com/api/v3/chapters/${route.params.id}`).then((result) => {
+            $fetch(`https://api.quran.com/api/v3/chapters/${route.params.id}/verses?limit=${result.chapter.verses_count}&translations=21&language=en&text_type=words`).then((response) => {
                 data.value = response.verses
             })
         })

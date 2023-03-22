@@ -10,11 +10,10 @@
 
 <script setup>
     import { ref } from 'vue';
-
     const data = ref([]);
 
     onMounted(() => {
-        $fetch("http://api.quran.com/api/v3/chapters").then((response) => {
+        $fetch("https://api.quran.com/api/v3/chapters").then((response) => {
             data.value = response.chapters;
         })
     })
